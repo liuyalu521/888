@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale=1.0, user-scalable=no />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>课工场移动端</title>
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./rem.js"></script>
+    <script src="./jquery-3.4.1.js"></script>
+    <script src="./zepto.js"></script>
+    <script src="./touch.js"></script>
+    <script src="./event.js"></script>
+    <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=2D3P23fksRUqwnaXgKEa07GMGmTtctgP"></script>
+    <!-- <script src="./swiper.js"></script>
+    <script src="./swiper.css"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> <script src="https://unpkg.com/swiper/js/swiper.js"> </script> <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+  
+  
+  </head>
+  <body>
+    <header class="head">
+      <div class="img">
+        <img src="./image/logo-new.png" alt="" />
+        <img src="./image/title-icon2.png" alt="" class="img_" />
+        <img src="./image/title-icon3.png" alt=""  class="ditu"/>
+      </div>
+    </header>
+    <!-- 斑点图 -->
+    <div class="banner"></div>
+    <!-- 地图 -->
+    <div id="allmap" hidden></div>
+    <!-- 大间隙 -->
+    <div class="feng"></div>
+    <!-- 荣誉 -->
+    <section class="honour">
+      <ul class="lis">
+        <li>
+          <div class="left"><img src="./image/little-icon1.png" alt="" /></div>
+          <div class="right">
+            <p>获批教育部</p>
+            <p>协同育人项目</p>
+          </div>
+        </li>
+        <li>
+          <div class="left"><img src="./image/little-icon2.png" alt="" /></div>
+          <div class="right">
+            <p>联手中国人民</p>
+            <p>邮电出版社</p>
+          </div>
+        </li>
+        <li>
+          <div class="left"><img src="./image/little-icon3.png" alt="" /></div>
+          <div class="right">
+            <p>课工场学员就业</p>
+            <p>由中国人保承担</p>
+          </div>
+        </li>
+        <li>
+          <div class="left"><img src="./image/little-icon4.png" alt="" /></div>
+          <div class="right">
+            <p>中国CMOOC</p>
+            <p>联盟成员</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- 大间隙 -->
+    <div class="feng"></div>
+    <!-- 师资团队 -->
+    <section class="club">
+      <ul>
+        <li>
+          <img src="./image/big-icon1.png" alt="" />
+          <p>植根北大</p>
+        </li>
+        <li>
+          <img src="./image/big-icon2.png" alt="" />
+          <p>大咖师资</p>
+        </li>
+        <li>
+          <img src="./image/big-icon3.png" alt="" />
+          <p>科学研究院</p>
+        </li>
+        <li>
+          <img src="./image/big-icon4.png" alt="" />
+          <p>智慧教材</p>
+        </li>
+        <li>
+          <img src="./image/big-icon5.png" alt="" />
+          <p>认证证书</p>
+        </li>
+        <li>
+          <img src="./image/big-icon6.png" alt="" />
+          <p>就业服务</p>
+        </li>
+        <li>
+          <img src="./image/big-icon7.png" alt="" />
+          <p>学员作品</p>
+        </li>
+        <li>
+          <img src="./image/big-icon8.png" alt="" />
+          <p>薪情报告</p>
+        </li>
+      </ul>
+    </section>
+    <!-- 小缝隙 -->
+    <div class="little"></div>
+    <!-- 训练营 -->
+    <section class="camp">
+      <div class="img"><img src="./image/IT.png" alt="" /></div>
+      <div>
+        <p class="first">IT免费训练营</p>
+        <p class="sec">
+          <span></span>
+          <span>大咖讲座 前沿课程免费学</span>
+        </p>
+        <p class="sec">
+          <span></span>
+          <span>价值6800元线上课程学习卡免费领!</span>
+        </p>
+      </div>
+      <div>立即预约</div>
+    </section>
+    <!-- 小缝隙 -->
+    <div class="little"></div>
+    <!-- 核心课程 -->
+    <section class="course">
+      <div class="top">
+        <p>核心课程</p>
+        <p>获取课程资料17839985081</p>
+      </div>
+      <div class="item">
+        <ul>
+          <li>
+            <img src="./image/course-icon1.png" alt="" />
+            <p>北美大数据</p>
+          </li>
+          <li>
+            <img src="./image/course-icon2.png" alt="" />
+            <p>JAVA</p>
+          </li>
+          <li>
+            <img src="./image/course-icon3.png" alt="" />
+            <p>WEB前端</p>
+          </li>
+          <li>
+            <img src="./image/course-icon4.png" alt="" />
+            <p>PHP</p>
+          </li>
+          <li>
+            <img src="./image/course-icon5.png" alt="" />
+            <p>UI设计</p>
+          </li>
+          <li>
+            <img src="./image/course-icon6.png" alt="" />
+            <p>Python</p>
+          </li>
+          <li>
+            <img src="./image/course-icon7.png" alt="" />
+            <p>电子商务</p>
+          </li>
+          <li>
+            <img src="./image/course-icon8.png" alt="" />
+            <p>尚能</p>
+          </li>
+          <li>
+            <img src="./image/course-icon9.png" alt="" />
+            <p>启蒙星</p>
+          </li>
+          <li>
+            <img src="./image/course-icon10.png" alt="" />
+            <p>ACCP</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 小缝隙 -->
+    <div class="little"></div>
+    <!-- 试听 -->
+    <section class="try">
+      <p>学习视频/试听体验卷,免费领</p>
+      <p>大咖倾囊干货 </p>
+      <p class="three">
+        <input type="search" class="search" placeholder="输入您的手机号或微信">
+        <input type="image" class="image" src="./image/people.png">
+        <button>免费领取</button>
+      </p>
+    </section>
+    <!-- 小缝隙 -->
+    <div class="little"></div>
+    <!-- 精彩视频 -->
+    <section class="video">
+      <div class="top">
+        <a>精彩视频</a>
+        <a>更多>></a>
+      </div>
+      <div class="lises">
+        <a>品牌解读</a>
+        <a>课程视频</a>
+        <a>活动现场</a>
+      </div>
+      <video src="" class="video"></video>
+          <!-- <video src="./audio/video.mp4" class="video_" controls></video> -->
+          <!-- <p>精心教学 </p> -->
+      
+    </section>
+    <!-- 小缝隙 -->
+    <div class="little"></div>
+    <!-- 师资团队 -->
+    <section class="team">
+        <div class="top">
+            <a>师资团队</a>
+            <a>更多>></a>
+          </div>
+          <div class="serve">
+            <a>行业专家</a>
+            <a>教学专家</a>
+            <a>技术专家</a>
+            <a>课程研发</a>
+          </div>
+          <div class="tea">
+            <ul>
+              <li>
+                <img src="./image/LIU.png" alt="">
+                <p>刘黎明</p>
+                <p>原阿里巴巴技术专家/经
+                    理。十年阿里技术研发
+                    和管理经验，熟悉大型
+                    互联网主流功能</p>
+              </li>
+              <li>
+                  <img src="./image/LIU.png" alt="">
+                  <p>刘黎明</p>
+                  <p>原阿里巴巴技术专家/经
+                      理。十年阿里技术研发
+                      和管理经验，熟悉大型
+                      互联网主流功能</p>
+              </li>
+              <li>
+                  <img src="./image/LIU.png" alt="">
+                  <p>刘黎明</p>
+                  <p>原阿里巴巴技术专家/经
+                      理。十年阿里技术研发
+                      和管理经验，熟悉大型
+                      互联网主流功能</p>
+              </li>
+              <li>
+                  <img src="./image/LIU.png" alt="">
+                  <p>刘黎明</p>
+                  <p>原阿里巴巴技术专家/经
+                      理。十年阿里技术研发
+                      和管理经验，熟悉大型
+                      互联网主流功能</p>
+                </li>
+            </ul>
+          </div>
+    </section>
+    <!-- 小缝隙 -->
+    <div class="little"></div>
+    <!-- 教学服务 -->
+    <section class="teach">
+      <div class="div1">
+        <a>教学服务</a>
+        <a>更多>></a>
+      </div>
+      <div class="div2">
+        <a>教学优势</a>
+        <a>认证证书 </a>
+        <a>CC服务</a>
+        <a>教学环境 </a>
+      </div>
+      <div class="div3">
+        <ul>
+          <li>
+              <img src="./image/server-icon1.png" alt="">
+              <p>教学产品互联网化</p>
+          </li>
+          <li>
+              <img src="./image/server-icon2.png" alt="">
+              <p>教学过程科学化</p>
+            </p>
+          </li>
+          <li>
+              <img src="./image/server-icon3.png" alt="">
+              <p>教学服务场景化</p>
+          </li>
+          <li>
+              <img src="./image/server-icon4.png" alt="">
+              <p>升级成为三咖课堂</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 小缝隙 -->
+    <div class="little"></div>
+    <!-- 品牌荣誉 -->
+    <section class="brand">
+      <div class="brand1">
+          <a>品牌荣誉</a>
+          <a>更多>></a>
+      </div>
+
+      <div class="brand2">
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide" >
+                      <ul>
+                          <li>
+                            <img src="./image/hon-icon1.png" alt="">
+                            <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                          <li>
+                              <img src="./image/hon-icon2.png" alt="">
+                              <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                          <li>
+                              <img src="./image/hon-icon1.png" alt="">
+                              <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                          <li>
+                              <img src="./image/hon-icon2.png" alt="">
+                              <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                        </ul> 
+                  </div>
+                   <div class="swiper-slide">
+                      <ul>
+                          <li>
+                            <img src="./image/hon-icon1.png" alt="">
+                            <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                          <li>
+                              <img src="./image/hon-icon2.png" alt="">
+                              <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                          <li>
+                              <img src="./image/hon-icon1.png" alt="">
+                              <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                          <li>
+                              <img src="./image/hon-icon2.png" alt="">
+                              <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                        </ul> 
+                  </div>
+                  <div class="swiper-slide">
+                      <ul>
+                          <li>
+                            <img src="./image/hon-icon1.png" alt="">
+                            <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                          <li>
+                              <img src="./image/hon-icon2.png" alt="">
+                              <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                          <li>
+                              <img src="./image/hon-icon1.png" alt="">
+                              <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                          <li>
+                              <img src="./image/hon-icon2.png" alt="">
+                              <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                        </ul> 
+                  </div> 
+                  <div class="swiper-slide">
+                      <ul>
+                          <li>
+                            <img src="./image/hon-icon1.png" alt="">
+                            <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                          <li>
+                              <img src="./image/hon-icon2.png" alt="">
+                              <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                          <li>
+                              <img src="./image/hon-icon1.png" alt="">
+                              <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                          <li>
+                              <img src="./image/hon-icon2.png" alt="">
+                              <p>中国消费者基金会重承诺守信用放心品牌</p>
+                          </li>
+                        </ul> 
+                  </div> 
+              </div>
+              <!-- 如果需要分页器 -->
+              <div class="swiper-pagination"></div>
+              
+              <!-- 如果需要导航按钮 -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              
+              <!-- 如果需要滚动条 -->
+              <div class="swiper-scrollbar"></div>
+          </div>
+        <!-- <ul>
+          <li>
+            <img src="./image/hon-icon1.png" alt="">
+            <p>中国消费者基金会重承诺守信用放心品牌</p>
+          </li>
+          <li>
+              <img src="./image/hon-icon2.png" alt="">
+              <p>中国消费者基金会重承诺守信用放心品牌</p>
+          </li>
+          <li>
+              <img src="./image/hon-icon1.png" alt="">
+              <p>中国消费者基金会重承诺守信用放心品牌</p>
+          </li>
+          <li>
+              <img src="./image/hon-icon2.png" alt="">
+              <p>中国消费者基金会重承诺守信用放心品牌</p>
+          </li>
+        </ul> -->
+      </div>
+      <!-- <div class="brand3">
+        <span class="span1"></span>
+        <span class="span2"></span>
+        <span class="span3"></span>
+        <span class="span4"></span>
+      </div> -->
+    </section>
+    <!-- 常见咨询问题 -->
+    <section class="question">
+      <div class="question1">
+          <a>常见咨询问题</a>
+          <a>更多>></a>
+      </div>
+      <div class="question2">
+        <ul>
+          <li>
+            <div>
+                  <img src="./image/problem-icon1.png" alt="">
+              <p>零基础</p>
+              <p>转行IT能掌握吗？</p>
+            </div>
+            <p>0基础班</p>
+          </li>
+          <li>
+            <div>
+              <img src="./image/problem-icon2.png" alt="">
+          <p>有工作经验</p>
+          <p>提升新技能点？</p>
+        </div>
+        <p>专家答疑</p></li>
+        <li>
+            <div>
+                <img src="./image/problem-icon3.png" alt="">
+            <p>应届生</p>
+            <p>如何找到合适工作？</p>
+          </div>
+          <p>职业规划</p>
+        </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 小缝隙 -->
+    <div class="little"></div>
+    <!-- 预约线下试听 -->
+    <section class="book">
+     <div class="book1">
+        <p>预约线下试听课</p>
+      <p>水平测试，为您量身定制试听课</p>
+     </div>
+      <div class="book2">
+            <select>
+                <option value="输选择预约课程">输选择预约课程</option>
+                <option value ="前端">前端</option>
+                <option value ="UI">UI</option>
+                <option value="JAVA">JAVA</option>
+              </select>
+          <div class="people">
+              <img src="./image/people.png" alt="">
+              <input type="text" placeholder="输入你的姓名">
+          </div>
+          <div class="phone">
+              <img src="./image/phone.png" alt="">
+              <input type="text" placeholder="输入你的手机号">
+          </div>
+          <button>免费领取</button>
+          <p class="shu">83345人已领取</p>
+      </div>
+    </section>
+    <!-- 底部 -->
+    <footer class="foot">
+      <ul>
+        <li>
+          <img src="./image/tel.png" alt="">
+          <p>电话</p>
+        </li>
+        <li>
+            <img src="./image/weixin.png" alt="">
+            <p>微信</p>
+        </li>
+        <li></li>
+        <li>
+            <img src="./image/money.png" alt="">
+            <p>学费</p>
+        </li>
+        <li>
+            <img src="./image/pack.png" alt="">
+            <p>就业</p>
+        </li>
+      </ul>
+      <div class="listen">
+              <img src="./image/lis.png" alt="">
+              <p>试听</p>
+      </div>
+    </footer>
+    <!-- 地图 -->
+    <script type="text/javascript">
+      // 百度地图API功能
+      var map = new BMap.Map("allmap");    // 创建Map实例
+      map.centerAndZoom(new BMap.Point(113.6890781486,34.7901395347), 50);  // 初始化地图,设置中心点坐标和地图级别
+      //添加地图类型控件
+      map.addControl(new BMap.MapTypeControl({
+        mapTypes:[
+                BMAP_NORMAL_MAP,
+                BMAP_HYBRID_MAP
+            ]}));	  
+      map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+      map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+    </script>
+    <!-- 轮播 -->
+    <script>        
+        var mySwiper = new Swiper ('.swiper-container', {
+          direction: 'horizontal', // 水平切换选项
+          loop: true, // 循环模式选项
+          
+          // 如果需要分页器
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        })        
+        </script>
+    <script>
+    $('.ditu').on('click',function(){
+      // $('.banner').togle();
+      // console.log('aaa')
+      $('#allmap').toggle();
+    })
+    
+    </script>
+  </body>
+</html>

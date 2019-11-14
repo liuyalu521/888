@@ -1,0 +1,685 @@
+.head {
+    width: 100%;
+    height: 0.52rem;
+    display: flex;
+    justify-content: center;
+}
+
+.head .img {
+    width: 4.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head .img img:nth-child(1) {
+    width: 1.52rem;
+    height: 0.24rem;
+}
+
+.head .img img:nth-child(2) {
+    width: 1.44rem;
+    height: 0.24rem;
+    margin-left: -0.33rem;
+}
+
+.head .img img:nth-child(3) {
+    width: 0.17rem;
+    height: 0.21rem;
+}
+
+/* 斑点图 */
+
+.banner {
+    height: 1.76rem;
+    background: url('./image/Banner.png') no-repeat;
+    background-size: 100% 100%;
+    display: block;
+}
+/* 地图 */
+#allmap{
+    height: 1.76rem;
+    /* display: none; */
+    position: absolute;
+    top: .5rem;
+    /* z-index: 99; */
+    background-color: red;
+    width: 100%;
+
+    
+}
+
+/* 小间隙 */
+
+.feng {
+    height: 0.16rem;
+    background-color: #EDEDED;
+}
+
+/* 荣誉 */
+
+.honour {
+    height: 1.31rem;
+    padding: 0.13rem 0.29rem;
+}
+
+.lis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lis li {
+    width: 2.04rem;
+    height: 0.45rem;
+    background: #a5c513;
+    border-radius: 0.08rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.13rem;
+    /* margin: 0.13rem 0.14rem 0rem 0; */
+}
+
+.lis li .left {
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lis li .right p {
+    font-size: 0.11rem;
+    color: #fff;
+}
+
+/* 师资团队 */
+
+.club {
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.club ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: .26rem .39rem;
+    box-sizing: border-box;
+}
+
+.club ul li {
+    width: 25%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.21rem;
+}
+
+.club ul li img {
+    width: 0.69rem;
+    height: 0.69rem;
+}
+
+.club ul li p {
+    font-size: 0.13rem;
+}
+
+/* 小缝隙 */
+
+.little {
+    height: 0.05rem;
+    background-color: #EDEDED;
+}
+
+/* 训练营 */
+
+.camp {
+    height: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camp .img {
+    width: 1.04rem;
+    height: 0.84rem;
+    display: flex;
+    align-items: center;
+}
+
+.camp div:nth-child(2) {
+    margin-left: 0.18rem;
+}
+
+.camp div:nth-child(2) .first {
+    font-size: 0.2rem;
+    font-weight: bolder;
+    border-bottom: 0.07rem;
+}
+
+.sec {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.05rem;
+}
+
+.sec span {
+    font-size: 0.11rem;
+    display: block;
+}
+
+.sec span:nth-child(1) {
+    width: 0.05rem;
+    height: 0.05rem;
+    border-radius: 50%;
+    background: #a4c411;
+    margin-right: 0.05rem;
+}
+
+.camp div:nth-child(3) {
+    width: 0.68rem;
+    height: 0.68rem;
+    border-radius: 50%;
+    background-color: #ac92fe;
+    font-size: 0.16rem;
+    color: #fff;
+    padding: 0.14rem;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 0.2rem;
+}
+
+/* 核心课程 */
+
+.course {
+    height: 2.9rem;
+}
+
+.course .top {
+    padding: 0.26rem 0.23rem 0 0.36rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course .top p:nth-child(1) {
+    font-size: 0.18rem;
+    font-weight: bolder;
+}
+
+.course .top p:nth-child(2) {
+    font-size: 0.12rem;
+}
+
+.item ul {
+    height: 2.45rem;
+    padding: .26rem .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item ul li {
+    width: 20%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item ul li img {
+    width: 0.59rem;
+    height: 0.59rem;
+}
+
+.item ul li p {
+    font-size: 0.11rem;
+}
+
+/* 试听 */
+
+.try {
+    height: 1.78rem;
+    padding: 0.29rem 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.try p:nth-child(1) {
+    font-size: 0.18rem;
+    font-weight: bolder;
+}
+
+.try p:nth-child(2) {
+    font-size: 0.11rem;
+    margin-top: -0.2rem;
+}
+
+.try .three {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.try .three .search {
+    width: 2.72rem;
+    height: 0.5rem;
+    font-size: 0.17rem;
+    color: #ccc;
+    padding-left: 0.64rem;
+    box-shadow: inset 1px 2px 11px 0px rgba(11, 2, 5, 0.23);
+    border-radius: 0.3rem;
+}
+
+.three .image {
+    width: 0.27rem;
+    height: 0.29rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 0.11rem;
+}
+
+.try .three button {
+    width: 1.27rem;
+    height: .46rem;
+    font-size: 0.14rem;
+    color: #fff;
+    background-color: #a5c513;
+    border-radius: 0.05rem;
+    text-align: center;
+}
+
+/* 精彩视频 */
+
+.video {
+    height: 4.36rem;
+}
+
+.video .top {
+    margin: 0.28rem .5rem .26rem .36rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video .top a:nth-child(1) {
+    font-size: 0.18rem;
+    font-weight: bolder;
+}
+
+.video .top a:nth-child(2) {
+    font-size: 0.11rem;
+}
+
+.lises {
+    margin: 0.26rem 0.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lises a {
+    width: 0.94rem;
+    height: 0.33rem;
+    border-radius: 0.08rem;
+    font-size: 0.12rem;
+    border: 0.01rem solid #000;
+    /* color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lises a:nth-child(1) {
+    background-color: #a5c513;
+    color: #fff;
+    border: 0;
+}
+
+.video_ {
+    width: 3.89rem;
+    height: 2.75rem;
+    margin: 0 0.47rem;
+}
+
+/* 师资团队 */
+
+.team {
+    /* height: 6.4rem; */
+    box-sizing: border-box;
+    padding-bottom: 0;
+}
+
+.team .top {
+    padding: 0.28rem .5rem .26rem .36rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team .top a:nth-child(1) {
+    font-size: 0.18rem;
+    font-weight: bolder;
+}
+
+.team .top a:nth-child(2) {
+    font-size: 0.11rem;
+}
+
+.serve, .div2 {
+    padding: 0 0.37rem 0 0.27rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serve a, .div2 a {
+    font-size: 0.12rem;
+    width: 0.94rem;
+    height: 0.33rem;
+    border-radius: 0.07rem;
+    border: 0.01rem solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serve a:nth-child(1), .div2 a:nth-child(1) {
+    border: 0;
+    color: #fff;
+    background: #a5c513;
+}
+
+.tea {
+    padding: 0.28rem 0.55rem 0;
+}
+
+.tea ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tea ul li {
+    width: 1.66rem;
+    height: 2.29rem;
+}
+
+.tea ul li img {
+    margin-left: 0.3rem;
+    width: 1.14rem;
+    height: 1.14rem;
+}
+
+.tea ul li p {
+    font-size: 0.14rem;
+}
+
+.tea ul li p:nth-of-type(1) {
+    text-align: center;
+}
+
+/* 教学服务 */
+
+.teach .div1, .brand1, .question1 {
+    padding: 0.28rem .36rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.teach .div1 a:nth-child(1), .brand1 a:nth-child(1), .question1 a:nth-child(1) {
+    font-size: 0.18rem;
+    font-weight: bolder;
+}
+
+.teach .div1 a:nth-child(2), .brand1 a:nth-child(2), .question1 a:nth-child(2) {
+    font-size: 0.11rem;
+}
+
+.div3 ul {
+    margin: 0.28rem 0.58rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div3 ul li {
+    width: 0.69rem;
+    height: 1.18rem;
+    text-align: center;
+}
+
+.div3 ul li img {
+    width: 0.69rem;
+    height: 0.69rem;
+}
+
+.div3 ul li p {
+    font-size: 0.15rem;
+    font-weight: bolder;
+}
+
+.brand2 ul {
+    margin: 0.3rem .59rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.brand2 ul li {
+    width: 1.69rem;
+    height: 1.76rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+}
+
+.brand2 ul li img {
+    width: 1.69rem;
+    height: 1.29rem;
+}
+
+.brand2 ul li p {
+    font-size: 0.11rem;
+    /* padding-top: 0.2rem; */
+}
+
+.brand3 {
+    display: flex;
+    justify-content: center;
+}
+
+.brand3 span {
+    width: 0.09rem;
+    height: 0.09rem;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 0.08rem;
+}
+
+/* 常见咨询问题 */
+
+.question2 {
+    margin: 0.28rem 0.38rem;
+}
+
+.question2 ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question2 ul li div {
+    width: 1.21rem;
+    height: 1.56rem;
+    background: url(./image/problem-bg.png);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question2 ul li div img {
+    width: 0.42rem;
+    height: 0.41rem;
+    z-index: 1;
+}
+
+.question2 ul li div p {
+    font-size: 0.15rem;
+    color: #fff;
+    width: 0.78rem;
+    text-align: center;
+}
+
+.question2 ul li>p {
+    font-size: 0.14rem;
+    width: 1.13rem;
+    height: 0.34rem;
+    border-radius: 0.07rem;
+    background: #9fc105;
+    color: #fff;
+    margin-top: 0.31rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 预约线下试听 */
+
+.book1 {
+    margin: 0.28rem 1.5rem 0.4rem 1.5rem;
+    text-align: center;
+}
+
+.book1 p:nth-child(1) {
+    font-size: 0.18rem;
+    font-weight: bolder;
+}
+
+.book1 p:nth-child(2) {
+    font-size: 0.11rem;
+}
+
+.book2 {
+    margin: 0 0.69rem 0.48rem 0.69rem;
+    font-size: 0.24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book2 select {
+    width: 3.43rem;
+    height: .46rem;
+    font-size: 0.12rem;
+    border-radius: 0.07rem;
+    border: solid 0.01rem #1b1b1b;
+    text-align: center;
+    margin-bottom: 0.18rem;
+}
+
+.people {
+    margin-bottom: 0.2rem;
+}
+
+.phone {
+    margin-bottom: 0.31rem;
+}
+
+.people, .phone {
+    width: 3.43rem;
+    height: 0.46rem;
+    border-radius: 0.07rem;
+    border: solid 0.01rem #1b1b1b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.22rem;
+}
+
+.people input, .phone input {
+    width: 2.2rem;
+}
+
+.people img {
+    width: 0.27rem;
+    height: 0.28rem;
+}
+
+.phone img {
+    width: 0.19;
+    height: 0.31rem;
+}
+
+.book2 button {
+    width: 2.95rem;
+    height: 0.54rem;
+    border-radius: 0.08rem;
+    background-color: #707070;
+    color: #fff;
+    font-size: 0.15rem;
+}
+
+.book2 .shu {
+    font-size: 0.11rem;
+    text-align: center;
+}
+
+/* 底部 */
+
+.foot {
+/* position: absolute;
+bottom: 0; */
+position: relative;
+box-shadow: 0 -0.01rem 0 0.01rem  rgb(223, 216, 216);
+}
+
+.foot ul {
+    margin: 0 0.54rem;
+    height: 0.72rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot ul li img {
+    width: 0.31rem;
+    height: 0.31rem;
+}
+
+.foot ul li p {
+    font-size: 0.11rem;
+}
+
+.listen {
+    position: absolute;
+    top: -0.15rem;
+    left: 2.1rem;
+    box-shadow: 0 -0.01rem 0 0.01rem #fff;
+    
+}
+
+.listen img {
+    width: 0.52rem;
+    height: 0.52rem;
+    z-index: 1;
+}
+
+.listen p {
+    font-size: 0.11rem;
+    text-align: center;
+}
